@@ -2,7 +2,7 @@ name: cd
 
 on:
   push:
-    branchs: [main]
+    branches: [main]
 
 jobs:
   tests:
@@ -19,6 +19,6 @@ jobs:
           go-version: "1.26.0"
 
       - name: Build image
-        run: ./script/buildprod.sh
+        run: ../../../script/buildprod.sh
 
 		
