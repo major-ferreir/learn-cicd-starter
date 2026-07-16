@@ -20,5 +20,3 @@ jobs:
 
       - name: Build image
         run: scripts/buildprod.sh
-
-		
