@@ -35,3 +35,7 @@ jobs:
 
       - name: Style
         run: test -z $(go fmt ./...)
+      - name: Install static checker
+        run: go install honnef.co/go/tools/cmd/staticcheck@latest
+      - name: Static checker
+        run: staticcheck ./...
